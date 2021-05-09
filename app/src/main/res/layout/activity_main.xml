@@ -45,4 +45,24 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/ordersbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/payButton"
+
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="171dp"
+
+        android:background="#43A047"
+
+        android:gravity="center"
+        android:text="My Orders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </RelativeLayout>

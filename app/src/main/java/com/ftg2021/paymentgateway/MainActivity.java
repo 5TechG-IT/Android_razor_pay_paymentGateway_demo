@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class MainActivity extends AppCompatActivity implements PaymentResultListener {
 
 
-    Button pay;
+    Button pay,orders;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity implements PaymentResultList
         });
 
 
+        orders=findViewById(R.id.ordersbtn);
+        orders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,MyOrders.class));
+            }
+        });
     }
 
     public void startPayment() {
